@@ -48,6 +48,7 @@ _05/2015 - 05/2021, Vitebsk_
 - Basic JS knowledge
 - JQuery, Bootstrap
 - Can work with GIT
+- OPP Principles
 
 ## Code samples
 
