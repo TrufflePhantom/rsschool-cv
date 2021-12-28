@@ -47,6 +47,7 @@ _05/2015 - 05/2021, Vitebsk_
 - NPM
 - Basic JS knowledge
 - JQuery, Bootstrap
+- Can work with GIT
 
 ## Code samples
 
