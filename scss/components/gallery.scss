@@ -1,0 +1,35 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  &__item {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    &_img {
+      width: 100%;
+    }
+    &:hover {
+      .gallery__overlay {
+        opacity: 1;
+      }
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    &_img {
+      cursor: pointer;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}
