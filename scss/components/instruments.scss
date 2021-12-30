@@ -1,0 +1,9 @@
+.instruments {
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 35px;
+    padding: 72px 0 100px;
+  }
+}

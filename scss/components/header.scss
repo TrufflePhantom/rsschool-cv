@@ -1,0 +1,136 @@
+.header {
+  background: #eeeff1;
+  padding: 57px 0;
+  &.upSize {
+    padding-top: 140px;
+  }
+  &__logo {
+    font-family: Revalia, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #34547a;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    &.sticky {
+      background: #eeeff1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+      z-index: 3000;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 40px;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    // flex-direction: column;
+  }
+
+  &__link {
+    color: #000000;
+    text-transform: uppercase;
+  }
+  &__link:hover {
+    color: #34537aa8;
+    transition: 0.5s;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  &__burger {
+    max-width: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 3000;
+  }
+  @media screen and (max-width: 992px) {
+    &__nav {
+      &-links {
+        display: none;
+        position: fixed;
+        background: rgba(138, 136, 139, 0.904);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2000;
+        align-items: center;
+        padding: 30px;
+        &--shown {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 25px;
+          flex-direction: column;
+        }
+      }
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+
+  &__find_me {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 162px 0;
+    align-items: center;
+    &.upSize {
+      padding-top: 220px;
+    }
+    @media screen and (max-width: 992px) {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    &_box {
+      max-width: 540px;
+      text-align: justify;
+      h1 {
+        font-weight: 500;
+        font-size: 48px;
+        color: #000;
+      }
+      p {
+        padding: 50px 0;
+        line-height: 26px;
+      }
+
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        background: #34547a;
+        padding: 20px;
+        cursor: pointer;
+        border: none;
+        &:hover {
+          background-color: #34537acc;
+          transition: 0.3s;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        text-align: center;
+      }
+    }
+  }
+}
